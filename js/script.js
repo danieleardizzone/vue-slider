@@ -68,6 +68,10 @@ createApp({
             if (this.currentIndex < 0) {
                 this.currentIndex = this.slides.length - 1
             }
+        },
+
+        thumbClick(thumbIndex){
+            this.currentIndex = thumbIndex;
         }
     }
 }).mount('#app');
